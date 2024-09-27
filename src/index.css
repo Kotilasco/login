@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #262626;
+}
+
+@layer base {
+  :root {
+    --black_900: #060802;
+    --black_900_01: #000000;
+    --black_900_0c: #0000000c;
+    --black_900_33: #0c0c0c33;
+    --black_900_4c: #0000004c;
+    --black_900_7f: #0000007f;
+    --blue_100: #b2d4f9;
+    --blue-gray_100: #d7d7d7;
+    --blue-gray_100_01: #d9d9d9;
+    --blue-gray-50: #f1f1f1;
+    --gray_200: #efefef;
+    --gray_200_01: #e8e8e8;
+    --gray_400: #bbbaba;
+    --gray_50: #fbfbfb;
+    --gray_500: #959595;
+    --gray-600: #6c6c6c;
+    --gray_700: #646464;
+    --gray_700_01: #58595b;
+    --gray_800: #3a3a3a;
+    --gray_900: #141313;
+    --gray_900_01: #1b1b1b;
+    --gray_900_02: #1a1a1a;
+    --gray_900_03: #262626;
+    --green_500: #39b54a;
+    --green_500_01: #38b349;
+    --light_blue_a700: #0077f9;
+    --light_green_500: #8dc63f;
+    --white_a700: #ffffff;
+    --white_a700_99: #ffffff99;
+
+    --radius-xs: 5px;
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-3xl: 30px;
+
+    --space-xs: 4px;
+    --space-sm: 10px;
+    --space-md: 14px;
+    --space-lg: 16px;
+    --space-xl: 22px;
+    --space-2xl: 32px;
+    --space-3xl: 34px;
+    --space-4xl: 38px;
+    --space-5xl: 40px;
+    --space-6xl: 138px;
+  }
+}
+
+@layer components {
+  .container-xs {
+    @apply w-full mx-auto max-w-[1036px];
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");

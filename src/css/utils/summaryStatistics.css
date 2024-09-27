@@ -1,0 +1,104 @@
+/* Container to hold the cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px; /* Space between cards */
+  }
+  
+  /* Individual card styling */
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 300px; /* Width of each card */
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px; /* Slight rounding for the cards themselves */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Elevation on hover */
+  }
+  
+  /* Text inside the card */
+  .card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Icon on the right side of the card */
+  .card-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Center the card-container in the middle of the screen */
+  .card-container {
+    max-width: 1000px; /* Max width for the card container */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly between cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between cards */
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Stack cards on smaller screens */
+    }
+  }
+
+  /* Outer circle container */
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black; /* Black border */
+    border-radius: 20px; /* Rounded corners */
+    width: 80%; /* Adjust the width as needed */
+    margin: 80px auto; /* Center the container on the page */
+  }
+
+  /* Section title styling */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Outline button centered below the cards */
+.outline-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .outline-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+
+  
+  

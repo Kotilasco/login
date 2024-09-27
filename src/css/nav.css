@@ -1,0 +1,127 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding-inline: 50px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.left { 
+  display: flex;
+  width: 200px;
+}
+
+.right {
+  display: flex; 
+  width: fit-content; 
+  gap: 20px;
+}
+
+.link_styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+}
+ 
+.enrol_your_school_styles {
+  padding-inline: 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.login_styles {
+  background-color: #39B54A;
+  color: #fff;
+  border-radius: 20px;
+  padding-inline: 20px;
+}
+
+.left svg {
+  width: 100%;
+}
+
+.right a:first-child:hover {
+  color: grey;
+}
+
+.right a:nth-child(2):hover, .right a:nth-child(3):hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+@media (max-width: 750px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding-inline: 50px;
+    padding-block: 30px;
+    background-color: #fff;
+    gap: 30px;
+  }
+
+  .hamburger {
+    display: flex;
+    width: 50px; 
+    height: 50px;
+    background-color:#39B54A;
+    border-radius: 5px;
+  }
+  
+  .left {
+    width: 100%; 
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+  }
+  
+  .right { 
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .link_styles {
+    width: 100%; 
+    height: 50px;
+  }
+  
+  .raise_an_enquiry_styles {
+    border: 1px solid #000;
+    border-radius: 25px;
+  }
+
+  .raise_an_enquiry_styles:hover {
+    background-color: #000;
+    color: #fff !important;
+  }
+
+  .enrol_your_school_styles {
+    padding-inline: 20px; 
+    border-radius: 25px;
+  }
+  
+  .login_styles { 
+    border-radius: 50px;
+    padding-inline: 20px;
+  }
+  
+  .left svg {
+    width: auto;
+    height: 50px;
+  }
+   
+}

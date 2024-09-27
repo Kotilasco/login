@@ -1,0 +1,44 @@
+.form_input_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;   
+}
+
+.form_input_label {
+  display: block; 
+  width: 48px;
+  padding-right: 16px;
+}
+ 
+.form_input {
+  display: flex;
+  background-color: var(--appGray);
+  color: var(--gray-900);
+  border-radius: 1.25rem;  
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--gray-900);
+}
+
+.form_input:focus {
+  border-color: var(--primary-600);
+  box-shadow: 0 0 0 3px var(--primary-600);
+}
+
+.form_input.invalid {
+  border-color: var(--red-500);
+}
+
+.form_input:disabled {
+  background-color: var(--gray-200);
+}
+
+.form_input_invalid_text {
+  color: var(--red-500);
+  font-size: 0.875rem; 
+  margin-top: 0.25rem; 
+  margin-left: 0.5rem; 
+}
+
